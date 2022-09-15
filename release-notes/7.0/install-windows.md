@@ -27,7 +27,8 @@ Each of the distributions can be downloaded from:
 
 You can install any of the distributions with MSI. The following image demonstrates installing the .NET SDK. After launching the MSI, click "Install" and you will be taken through the process of installing the SDK.
 
-![image](https://user-images.githubusercontent.com/2608468/112773547-4a34e880-8feb-11eb-8671-59fffceffd42.png)
+![image](https://user-images.githubusercontent.com/94140381/186767749-45306b95-cd1b-4d85-9634-42fb83a1cf4b.png)
+
 
 ## Windows Server Hosting with IIS
 
@@ -40,13 +41,13 @@ You can install .NET with a binary archive. This option is required if you want 
 The following workflow demonstrates downloading, unpacking, configuring, and running the .NET SDK from the command line. You may choose to do some of these tasks via the browser and functionality provided by your operating system.
 
 ```console
-C:\>curl -Lo dotnet.zip https://download.visualstudio.microsoft.com/download/pr/e904f60b-8b5a-46cc-a3c7-e37f87aa9aa2/ee9decc38b24f05e6edf8a63639653a1/dotnet-sdk-7.0.100-preview.2.22153.17-win-x64.exe
+C:\>curl -Lo dotnet.zip https://download.visualstudio.microsoft.com/download/pr/87a58b01-55e1-4a0b-80bd-51a12d403bd6/f88b8b7908aab1a3876a686ce984acf8/dotnet-sdk-7.0.100-rc.1.22431.12-win-x64.exe
 C:\>tar -C dotnet -xf dotnet.zip
 C:\>del dotnet.zip
 C:\>set DOTNET_ROOT=C:\dotnet
 C:\>set PATH=%PATH%;C:\dotnet
 C:\>dotnet --version
-7.0.100-preview.2.22153.17
+7.0.100-rc.1.22431.12
 ```
 
 The `DOTNET_ROOT` environment variable is required to launch an application with their executables (like `myapp.exe`). The executables look for this environment variable to find the runtime if it isn't installed in its regular location. The `PATH` environment variable must be updated if you want to use `dotnet` without absolute paths to its location. Setting both of these environment variables is optional.

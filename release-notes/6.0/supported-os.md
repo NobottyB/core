@@ -28,7 +28,7 @@ OS                                    | Version                 | Architectures 
 
 OS                                    | Version               | Architectures     | Lifecycle
 --------------------------------------|-----------------------|-------------------|----------
-[Alpine Linux][Alpine]                | 3.12+                 | x64, Arm64, Arm32 | [Alpine][Alpine-lifecycle]
+[Alpine Linux][Alpine]                | 3.13+                 | x64, Arm64, Arm32 | [Alpine][Alpine-lifecycle]
 [CentOS][CentOS]                      | 7+                    | x64               | [CentOS][CentOS-lifecycle]
 [Debian][Debian]                      | 10+                   | x64, Arm64, Arm32 | [Debian][Debian-lifecycle]
 [Fedora][Fedora]                      | 33+                   | x64               | [Fedora][Fedora-lifecycle]
@@ -36,6 +36,8 @@ OS                                    | Version               | Architectures   
 [Red Hat Enterprise Linux][RHEL]      | 7+                    | x64, Arm64        | [Red Hat][RHEL-lifecycle]
 [SUSE Enterprise Linux (SLES)][SLES]  | 12 SP2+               | x64               | [SUSE][SLES-lifecycle]
 [Ubuntu][Ubuntu]                      | 16.04, 18.04, 20.04+  | x64, Arm64, Arm32 | [Ubuntu][Ubuntu-lifecycle]
+
+Note: Newer distro versions include OpenSSL 3 and not OpenSSL 1.x. .NET 6 is the first .NET version to support OpenSSL3. You need to use .NET 6+ if you want to use a distro version that only offers OpenSSL 3, such as Ubuntu 22.04.
 
 [Alpine]: https://alpinelinux.org/
 [Alpine-lifecycle]: https://alpinelinux.org/releases/
@@ -100,6 +102,7 @@ None yet.
 
 Support for the following versions was ended by the distribution owners and are [no longer supported by .NET 6.0][OS-lifecycle-policy].
 
+* Alpine 3.12
 * macOS 10.13
 
 [OS-lifecycle-policy]: https://github.com/dotnet/core/blob/main/os-lifecycle-policy.md
